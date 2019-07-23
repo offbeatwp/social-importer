@@ -1,0 +1,31 @@
+{
+  "name": "offbeatwp/social-importer",
+  "description": "Add social things to offbeatwp",
+  "license": "MIT",
+  "type": "offbeatwp-service",
+  "authors": [
+    {
+      "name": "Daan Seegers",
+      "email": "daan@raow.nl"
+    },
+    {
+      "name": "Chris Schrijver",
+      "email": "chris@raow.nl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "OffbeatWP\\SocialImporter\\": "src"
+    }
+  },
+  "require": {
+    "offbeatwp/acf-core": "dev-master",
+    "offbeatwp/acf-layout": "dev-master",
+    "offbeatwp/acf-sitesettings": "dev-master",
+    "twig/twig": "^2.0",
+    "php-di/php-di": "^6.0",
+    "symfony/event-dispatcher": "^3.3",
+    "illuminate/support": "^5.7",
+    "offbeatwp/framework": "dev-master"
+  }
+}
