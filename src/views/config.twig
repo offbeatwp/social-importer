@@ -1,5 +1,5 @@
 <div class="wrap">
-    <h1>{{ __('Social Importers', 'raow') }}</h1>
+    <h1>{{ __('Social Importers', 'offbeatwp') }}</h1>
 
     {% for channel in channels %}
         <h3>{{ channel.config('type') }} ({{ channel.config('id') }})</h3>
@@ -10,9 +10,9 @@
             <a href="{{ channel.getLoginUrl() }}">Login into this channel</a><br>
             <small><i>{{ channel.getRedirectUrl() }}</i></small>
         {% elseif channel.getStatus() == 'ready'  %}
-            {{ __('This channel is ready to pull posts', 'raow') }} (<a href="{{ channel.getResetUrl() }}" onClick="return confirm('{{ __('Are you sure?', 'raow') }}')">Reset channel</a>)
+            {{ __('This channel is ready to pull posts', 'offbeatwp') }} (<a href="{{ channel.getResetUrl() }}" onClick="return confirm('{{ __('Are you sure?', 'offbeatwp') }}')">Reset channel</a>)
         {% elseif channel.getStatus() == 'failed'  %}
-            {{ __('Oops, something went wrong, please try again.', 'raow') }}
+            {{ __('Oops, something went wrong, please try again.', 'offbeatwp') }}
         {% else %}
             {{ channel.getStatus() }}
         {% endif %}

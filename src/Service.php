@@ -24,7 +24,7 @@ class Service extends AbstractService {
             return $remove;
         });
 
-        offbeat('admin-page')->makeSub('tools', __('Social Importer', 'raow'), 'social-importer', 'edit_posts', 'controller');
+        offbeat('admin-page')->makeSub('tools', __('Social Importer', 'offbeatwp'), 'social-importer', 'edit_posts', 'controller');
 
         offbeat('console')->register(\OffbeatWP\SocialImporter\Console\SocialImporterCommand::class);
 
@@ -34,7 +34,7 @@ class Service extends AbstractService {
     public function registerPostType()
     {
         offbeat('post-type')
-            ->make(\OffbeatWP\SocialImporter\Models\SocialPostModel::POST_TYPE, __('Social Posts', 'raow'), __('Social Post', 'raow'))
+            ->make(\OffbeatWP\SocialImporter\Models\SocialPostModel::POST_TYPE, __('Social Posts', 'offbeatwp'), __('Social Post', 'offbeatwp'))
             ->model(\OffbeatWP\SocialImporter\Models\SocialPostModel::class)
             ->supports(['title', 'editor', 'thumbnail', 'custom-fields'])
             ->notPubliclyQueryable()
