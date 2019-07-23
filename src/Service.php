@@ -45,8 +45,11 @@ class Service extends AbstractService {
 
     public function registerRoutes()
     {
-//             offbeat('routes')->register([\OffbeatWP\SocialImporter\Controllers\SocialImporterController::class, 'actionConfig'], function () {
-//            return is_admin() && $_GET['page'] == 'social-importer';
-//        });
+             offbeat('routes')->callback(
+                function () {
+                    return is_admin() && $_GET['page'] == 'social-importer';
+                },
+                [\OffbeatWP\SocialImporter\Controllers\SocialImporterController::class, 'actionConfig']
+             );
     }
 }
