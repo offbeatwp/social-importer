@@ -1,7 +1,7 @@
 <?php
 namespace OffbeatWP\SocialImporter\Actions;
 
-namespace OffbeatWP\Hooks\AbstractAction;
+use OffbeatWP\Hooks\AbstractAction;
 
 class SocialEmbed extends AbstractAction {
     function execute() {

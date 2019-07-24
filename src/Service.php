@@ -28,7 +28,7 @@ class Service extends AbstractService {
 
         offbeat('console')->register(\OffbeatWP\SocialImporter\Console\SocialImporterCommand::class);
 
-        offbeat('ajax')->make('social_embed', \OffbeatWP\SocialImporter\Actions\SocialEmbed::class);
+        offbeat('ajax')->make('social_embed', Actions\SocialEmbed::class);
     }
 
     public function registerPostType()
