@@ -1,7 +1,7 @@
 <?php
 namespace OffbeatWP\SocialImporter\Console;
 
-use OffbeatWP\SocialImporter\Console\AbstractCommand;
+use OffbeatWP\Console\AbstractCommand;
 
 class SocialImporterCommand extends AbstractCommand {
     const COMMAND = 'social-importer';
