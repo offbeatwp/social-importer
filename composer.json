@@ -25,7 +25,6 @@
     "twig/twig": "^2.0",
     "php-di/php-di": "^6.0",
     "symfony/event-dispatcher": "^3.3",
-    "illuminate/support": "^5.7",
-    "offbeatwp/framework": "dev-master"
+    "illuminate/support": "^5.7"
   }
 }
