@@ -13,7 +13,7 @@ Then you need to add the social importer as service. You can do this by adding t
 ```
 OffbeatWP\SocialImporter\Service::class,
 ```
-Now make a `social_importer.php` file in `config` folder. In this file, you need to register the API key
+Now make a `social_importer.php` file in `config` folder. This file, you need to register the API key
 ```
 return [
     [
