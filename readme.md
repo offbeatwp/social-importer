@@ -25,4 +25,4 @@ return [
 ```
 
 
-The facebook function does not work yet
+The Facebook function does not work yet
