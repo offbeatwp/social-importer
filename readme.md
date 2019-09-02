@@ -24,5 +24,10 @@ return [
     ],
 ```
 
+After this, you have to activate the account using OAuth. 
 
-The Facebook function does not work yet
+
+
+## The Facebook function does not work yet
+
+
