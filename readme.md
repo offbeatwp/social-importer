@@ -26,8 +26,11 @@ return [
 
 After this, you have to activate the account using OAuth. 
 
+Make a call using WP cli
 
+`wp social-importer`
 
 ## The Facebook function does not work yet
+
 
 
