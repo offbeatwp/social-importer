@@ -17,10 +17,10 @@ Now make a `social_importer.php` file in `config` folder. You need to register t
 ```
 return [
     [
-        'id'           => ‘account_insta',
+        'id'           => 'account_insta',
         'type'         => 'instagram',
-        'api_key'      => ‘my api key',
-        'api_secret'   => ‘my secret',
+        'api_key'      => 'my api key',
+        'api_secret'   => 'my secret',
     ],
 ```
 
